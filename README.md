@@ -9,9 +9,12 @@ ranks zero and one. Four rows do not give a uniform window: ranks 3 and 6
 have degrees 1 and 3.
 
 This settles cutoff two of the ordered large-block conjecture and gives
-the stronger result at gap two. The paper credits Fang's continuous-phase
-interval method and distinguishes the earlier unordered and partially
-ordered families. [Original problem](https://www.symmetricfunctions.com/realRootedOpenProblems.htm#set-partitions-and-trees)
+the stronger result at gap two. In the original ordered problem every
+ordering of all blocks is counted. The MathOverflow question concerns
+unordered partitions, whose cutoff-two row is the shifted run-sorted
+descent polynomial. The ordered lift orders only the nonsingleton blocks.
+The paper credits Fang's continuous-phase interval method.
+[Original ordered problem](https://www.symmetricfunctions.com/realRootedOpenProblems.htm#set-partitions-and-trees) · [Unordered question](https://mathoverflow.net/questions/462360/set-partitions-with-big-blocks-real-rooted-polynomials)
 
 ## Reproduce the proof
 
@@ -24,13 +27,20 @@ locked Lean project are included. From the checkout root run
 
 To rebuild the PDF from both loose TeX and the archived source, run
 `python3 -B paper/reproduce.py` with pdfLaTeX from TeX Live 2026.
-The script replays both finite certificates and requires the resulting
-PDF files to agree byte for byte.
+The script also runs from a directory containing just `reproduce.py` and
+`arxiv-source.zip`. It loads the TeX and certificate files from that ZIP,
+verifies them and never overwrites the submitted PDF or archive. Use
+`--output rebuilt.pdf` to save the result to a fresh path. To expose the
+individual sources explicitly, run `unzip arxiv-source.zip` in a fresh
+paper directory before the checks.
 
 The formal entry is `OrderedPartitions.original_threshold_two_window`
 in `formal/OrderedPartitions/TwoPoleAllSizes.lean`. From a clean
 checkout use `python3 -B formal/verify.py /path/to/locked/.lake/packages 2`
 with Lean 4.33.1 and the nine dependencies pinned in the manifest.
+The separate Lean verification ZIP also provides `run-cold.py` beside
+its frozen source ZIP. After extracting the verification ZIP, use
+`python3 -B run-cold.py /path/to/locked/.lake/packages --workers 2`.
 The GitHub Actions workflow provisions these dependencies separately and
 rebuilds the complete local proof from zero project objects.
 The [verification report](verification/FINAL-AUDIT.md) gives the Spark
