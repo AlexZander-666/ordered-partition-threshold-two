@@ -1,0 +1,550 @@
+source_zip_sha256 ec9deee2dc302459b371b7931abc50c3ee6ab6ff526a112074ef2de96271a825
+PASS lexical proof scan and exact source manifest on 93 modules
+locked-dependency mathlib 0df444a360eaa60ab8c11dca51a86af692955474
+locked-dependency plausible b7eb3304aeae834b12dda98993a37f6a41f6f0bb
+locked-dependency LeanSearchClient 5f4d51b81cbd3f6b32b156bfad9056621a040404
+locked-dependency importGraph 16f02aa7642864af59f1ff0e384a015994db9118
+locked-dependency proofwidgets 4be2e3d5087eeb272cf5a8853b8f9dd025ef5957
+locked-dependency aesop 3448c0bcc5ce01b2d1546e483ec3620e32df3d0e
+locked-dependency Qq 92c15be17b7caf78c2ad767ec40f89052d908d81
+locked-dependency batteries 4488d40d070b9700d4d5a6aa342f0d40c31b2a2d
+locked-dependency Cli 6130a47896ce867c6a4a55373441e59e565bad0f
+Lean (version 4.33.1, aarch64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Linux aarch64 Initial project objects: 0
+ℹ [3459/3496] Built OrderedPartitions.HardRodDelay (1.5s)
+info: OrderedPartitions/HardRodDelay.lean:74:0: 'OrderedPartitions.HardRod.delay_zero_spacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/HardRodDelay.lean:75:0: 'OrderedPartitions.HardRod.delay_sturm_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3461/3499] Built OrderedPartitions.TwoPoleGeometry (1.6s)
+ℹ [3462/3499] Built OrderedPartitions.FirstJump (1.6s)
+info: OrderedPartitions/FirstJump.lean:159:0: 'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:160:0: 'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:161:0: 'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:162:0: 'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:163:0: 'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:164:0: 'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJump.lean:165:0: 'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3463/3499] Built OrderedPartitions.QuadraticBracketing (1.5s)
+info: OrderedPartitions/QuadraticBracketing.lean:75:0: 'OrderedPartitions.moment_gap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/QuadraticBracketing.lean:76:0: 'OrderedPartitions.first_jump_brackets_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3464/3499] Built OrderedPartitions.TwoPolePhaseStrips (992ms)
+info: OrderedPartitions/TwoPolePhaseStrips.lean:118:0: 'OrderedPartitions.TwoPolePhase.strips_of_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3465/3499] Built OrderedPartitions.TwoPolePhase (1.5s)
+info: OrderedPartitions/TwoPolePhase.lean:45:0: 'OrderedPartitions.TwoPolePhase.next_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3466/3499] Built OrderedPartitions.HardRodPolynomial (1.7s)
+info: OrderedPartitions/HardRodPolynomial.lean:107:0: 'OrderedPartitions.HardRod.coeff_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/HardRodPolynomial.lean:108:0: 'OrderedPartitions.HardRod.phi_delay' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/HardRodPolynomial.lean:109:0: 'OrderedPartitions.HardRod.phi_sturm' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3467/3499] Built OrderedPartitions.QuadraticRootOrder (2.1s)
+info: OrderedPartitions/QuadraticRootOrder.lean:239:0: 'OrderedPartitions.QuadraticOrder.adjacent_of_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/QuadraticRootOrder.lean:240:0: 'OrderedPartitions.QuadraticOrder.adjacent_of_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/QuadraticRootOrder.lean:241:0: 'OrderedPartitions.QuadraticOrder.normalized_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3468/3502] Built OrderedPartitions.FirstJumpRows (1.4s)
+info: OrderedPartitions/FirstJumpRows.lean:50:0: 'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:51:0: 'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/FirstJumpRows.lean:52:0: 'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3469/3504] Built OrderedPartitions.HardRodDegree (1.5s)
+info: OrderedPartitions/HardRodDegree.lean:57:0: 'OrderedPartitions.HardRod.phi_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/HardRodDegree.lean:58:0: 'OrderedPartitions.HardRod.phi_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3471/3553] Built OrderedPartitions.InterlacingStep (2.1s)
+info: OrderedPartitions/InterlacingStep.lean:206:0: 'OrderedPartitions.InterlacingStep.RootArray.exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/InterlacingStep.lean:207:0: 'OrderedPartitions.InterlacingStep.RootArray.eval_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/InterlacingStep.lean:208:0: 'OrderedPartitions.InterlacingStep.RootArray.roots_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/InterlacingStep.lean:209:0: 'OrderedPartitions.InterlacingStep.rise_of_alternating_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/InterlacingStep.lean:210:0: 'OrderedPartitions.InterlacingStep.eval_between_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/InterlacingStep.lean:211:0: 'OrderedPartitions.InterlacingStep.rise_of_opposite' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3472/3553] Built OrderedPartitions.LastBlock (1.4s)
+info: OrderedPartitions/LastBlock.lean:155:0: 'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:156:0: 'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlock.lean:157:0: 'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3473/3553] Built OrderedPartitions.HardRodWindow (1.5s)
+info: OrderedPartitions/HardRodWindow.lean:45:0: 'OrderedPartitions.HardRod.phi_window_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3474/3553] Built OrderedPartitions.TwoPolePrincipal (3.7s)
+ℹ [3475/3553] Built OrderedPartitions.LastBlockRow (1.5s)
+info: OrderedPartitions/LastBlockRow.lean:104:0: 'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:105:0: 'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:106:0: 'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/LastBlockRow.lean:107:0: 'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3476/3553] Built OrderedPartitions.HardRodInterlacing (1.6s)
+info: OrderedPartitions/HardRodInterlacing.lean:42:0: 'OrderedPartitions.HardRod.unit_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3477/3553] Built OrderedPartitions.TwoPoleBranch (1.7s)
+info: OrderedPartitions/TwoPoleBranch.lean:67:0: 'OrderedPartitions.TwoPole.critical_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleBranch.lean:68:0: 'OrderedPartitions.TwoPole.upperPole_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3478/3553] Built OrderedPartitions.TwoPoleRectangle (2.1s)
+ℹ [3479/3553] Built OrderedPartitions.MarkedSeries (1.7s)
+info: OrderedPartitions/MarkedSeries.lean:140:0: 'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:141:0: 'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:142:0: 'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:143:0: 'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:144:0: 'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:145:0: 'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/MarkedSeries.lean:146:0: 'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3480/3553] Built OrderedPartitions.HardRodResidue (1.5s)
+info: OrderedPartitions/HardRodResidue.lean:67:0: 'OrderedPartitions.HardRod.phi_shift_at_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/HardRodResidue.lean:68:0: 'OrderedPartitions.HardRod.positive_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/HardRodResidue.lean:69:0: 'OrderedPartitions.HardRod.phi_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3481/3553] Built OrderedPartitions.TwoPoleHeightLimit (1.5s)
+info: OrderedPartitions/TwoPoleHeightLimit.lean:75:0: 'OrderedPartitions.TwoPole.pole_height_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleHeightLimit.lean:76:0: 'OrderedPartitions.TwoPole.pole_height_vanish' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3482/3553] Built OrderedPartitions.TwoPoleRightBounds (1.9s)
+info: OrderedPartitions/TwoPoleRightBounds.lean:55:0: 'OrderedPartitions.TwoPole.pole_right_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3483/3553] Built OrderedPartitions.QuadraticExactRows (1.5s)
+info: OrderedPartitions/QuadraticExactRows.lean:120:0: 'OrderedPartitions.QuadraticExact.rows_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/QuadraticExactRows.lean:121:0: 'OrderedPartitions.QuadraticExact.original_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/QuadraticExactRows.lean:122:0: 'OrderedPartitions.QuadraticExact.original_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3484/3553] Built OrderedPartitions.TwoPoleContour (1.8s)
+ℹ [3485/3553] Built OrderedPartitions.OriginalEGF (1.7s)
+info: OrderedPartitions/OriginalEGF.lean:91:0: 'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/OriginalEGF.lean:92:0: 'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3486/3553] Built OrderedPartitions.HardRodRootTracking (1.6s)
+info: OrderedPartitions/HardRodRootTracking.lean:89:0: 'OrderedPartitions.RootTracking.simple_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3487/3553] Built OrderedPartitions.TwoPoleFiniteRows (1.3s)
+info: OrderedPartitions/TwoPoleFiniteRows.lean:56:0: 'OrderedPartitions.TwoPoleFinite.table_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleFiniteRows.lean:57:0: 'OrderedPartitions.TwoPoleFinite.tablePoly_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3488/3553] Built OrderedPartitions.TwoPoleAngles (1.6s)
+info: OrderedPartitions/TwoPoleAngles.lean:63:0: 'OrderedPartitions.TwoPole.beta_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3489/3553] Built OrderedPartitions.TwoPoleRectangleFTC (1.6s)
+✔ [3490/3553] Built OrderedPartitions.TwoPoleTwoSteps (2.4s)
+ℹ [3491/3553] Built OrderedPartitions.HardRodRightBrackets (1.7s)
+info: OrderedPartitions/HardRodRightBrackets.lean:68:0: 'OrderedPartitions.RootTracking.equal_of_alternating_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3492/3553] Built OrderedPartitions.TwoPoleOriginalTaylor (2.0s)
+info: OrderedPartitions/TwoPoleOriginalTaylor.lean:208:0: 'OrderedPartitions.TwoPole.iteratedDeriv_inv_G_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleOriginalTaylor.lean:209:0: 'OrderedPartitions.TwoPole.inv_G_hasFPowerSeriesAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleOriginalTaylor.lean:210:0: 'OrderedPartitions.TwoPole.iterate_dslope_inv_G_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleOriginalTaylor.lean:211:0: 'OrderedPartitions.TwoPole.original_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3493/3553] Built OrderedPartitions.TwoPoleWinding (1.7s)
+ℹ [3494/3553] Built OrderedPartitions.TwoPolePhaseEndpoints (1.7s)
+info: OrderedPartitions/TwoPolePhaseEndpoints.lean:90:0: 'OrderedPartitions.TwoPole.phase_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPolePhaseEndpoints.lean:91:0: 'OrderedPartitions.TwoPole.phase_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3495/3553] Built OrderedPartitions.TwoPoleFiniteBrackets (1.3s)
+info: OrderedPartitions/TwoPoleFiniteBrackets.lean:96:0: 'OrderedPartitions.TwoPoleFinite.original_in_boxes' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleFiniteBrackets.lean:97:0: 'OrderedPartitions.TwoPoleFinite.stay_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleFiniteBrackets.lean:98:0: 'OrderedPartitions.TwoPoleFinite.rise_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3496/3553] Built OrderedPartitions.TwoPoleFiniteData.Table (3.1s)
+✔ [3497/3553] Built OrderedPartitions.TwoPoleCauchyKernel (1.6s)
+ℹ [3498/3553] Built OrderedPartitions.TwoPolePhaseReadout (1.8s)
+info: OrderedPartitions/TwoPolePhaseReadout.lean:143:0: 'OrderedPartitions.TwoPolePhase.root_array_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPolePhaseReadout.lean:144:0: 'OrderedPartitions.TwoPolePhase.ordered_pair_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3499/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At03 (1.3s)
+✔ [3500/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At02 (1.4s)
+✔ [3501/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At04 (1.3s)
+✔ [3502/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At05 (1.3s)
+✔ [3503/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At06 (1.3s)
+✔ [3504/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At07 (1.4s)
+✔ [3505/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At08 (1.4s)
+✔ [3506/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At09 (1.3s)
+✔ [3507/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At10 (1.3s)
+✔ [3508/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At11 (1.4s)
+✔ [3509/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At12 (1.4s)
+✔ [3510/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At13 (1.4s)
+✔ [3511/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At14 (1.5s)
+✔ [3512/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At15 (1.5s)
+✔ [3513/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At16 (1.6s)
+✔ [3514/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At17 (1.7s)
+✔ [3515/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At18 (1.7s)
+✔ [3516/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At19 (1.7s)
+✔ [3517/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At20 (1.7s)
+✔ [3518/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair1At21 (1.8s)
+✔ [3519/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At02 (1.3s)
+✔ [3520/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At03 (1.3s)
+✔ [3521/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At04 (1.4s)
+✔ [3522/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At05 (1.3s)
+✔ [3523/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At06 (1.3s)
+✔ [3524/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At07 (1.3s)
+✔ [3525/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At08 (1.4s)
+✔ [3526/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At09 (1.4s)
+✔ [3527/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At10 (1.4s)
+✔ [3528/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At11 (1.5s)
+✔ [3529/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At12 (1.5s)
+✔ [3530/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At14 (1.5s)
+✔ [3531/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At13 (1.5s)
+✔ [3532/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At15 (1.5s)
+✔ [3533/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At16 (1.6s)
+✔ [3534/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At17 (1.6s)
+✔ [3535/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At18 (1.7s)
+✔ [3536/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At19 (1.7s)
+✔ [3537/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At20 (1.8s)
+✔ [3538/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At21 (1.7s)
+✔ [3539/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At22 (1.9s)
+✔ [3540/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At23 (1.9s)
+✔ [3541/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At24 (2.1s)
+✔ [3542/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At25 (2.0s)
+✔ [3543/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At26 (1.0s)
+✔ [3544/3553] Built OrderedPartitions.TwoPoleFiniteData.Pair2At27 (2.1s)
+ℹ [3545/3553] Built OrderedPartitions.TwoPoleFirstRows (1.3s)
+info: OrderedPartitions/TwoPoleFirstRows.lean:23:0: 'OrderedPartitions.TwoPoleFinite.first_gap_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleFirstRows.lean:24:0: 'OrderedPartitions.TwoPoleFinite.first_gap_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3546/3553] Built OrderedPartitions.TwoPoleTaylor (1.6s)
+ℹ [3547/3553] Built OrderedPartitions.TwoPoleFiniteVerified (1.3s)
+info: OrderedPartitions/TwoPoleFiniteVerified.lean:77:0: 'OrderedPartitions.TwoPoleFinite.original_gap1_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleFiniteVerified.lean:109:0: 'OrderedPartitions.TwoPoleFinite.original_gap2_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3548/3553] Built OrderedPartitions.TwoPolePhaseLimits (1.7s)
+info: OrderedPartitions/TwoPolePhaseLimits.lean:35:0: 'OrderedPartitions.TwoPolePhase.ordered_pair_of_phase_limits' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPolePhaseLimits.lean:109:0: 'OrderedPartitions.TwoPolePhase.ordered_pair_of_parameter_limits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [3549/3553] Built OrderedPartitions.TwoPoleSubtraction (1.7s)
+ℹ [3550/3553] Built OrderedPartitions.TwoPoleModelReadout (1.8s)
+info: OrderedPartitions/TwoPoleModelReadout.lean:66:0: 'OrderedPartitions.TwoPole.original_pair_of_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleModelReadout.lean:67:0: 'OrderedPartitions.TwoPole.original_all_of_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3551/3553] Built OrderedPartitions.TwoPoleResidues (1.5s)
+ℹ [3552/3553] Built OrderedPartitions.TwoPoleCosineModel (1.5s)
+info: OrderedPartitions/TwoPoleCosineModel.lean:135:0: 'OrderedPartitions.TwoPole.rowScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleCosineModel.lean:136:0: 'OrderedPartitions.TwoPole.cosine_model_of_residues' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleCosineModel.lean:137:0: 'OrderedPartitions.TwoPole.cosine_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleCosineModel.lean:138:0: 'OrderedPartitions.TwoPole.realError_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleCosineModel.lean:139:0: 'OrderedPartitions.TwoPole.realError_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3553/3553] Built OrderedPartitions.TwoPoleAllSizes (1.5s)
+info: OrderedPartitions/TwoPoleAllSizes.lean:50:0: 'OrderedPartitions.original_threshold_two_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleAllSizes.lean:51:0: 'OrderedPartitions.threshold_two_window_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleAllSizes.lean:52:0: 'OrderedPartitions.original_threshold_two_three_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OrderedPartitions/TwoPoleAllSizes.lean:53:0: 'OrderedPartitions.original_threshold_two_consecutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3553 jobs).
+strict_build_exit=0
+BEGIN targeted audit
+OrderedPartitions.original_threshold_two_window (n : ℕ) {g : ℕ} (gap : g = 1 ∨ g = 2) :
+  OrderedPartitions.RootTracking.OrderedPair (n / 2) (OrderedPartitions.row n 2) (OrderedPartitions.row (n + g) 2)
+OrderedPartitions.threshold_two_window_sharp :
+  ¬OrderedPartitions.RootTracking.OrderedPair (3 / 2) (OrderedPartitions.row 3 2) (OrderedPartitions.row 6 2)
+OrderedPartitions.original_threshold_two_three_rows {n g : ℕ} (hn : 2 ≤ n) (gap : g = 1 ∨ g = 2) :
+  OrderedPartitions.RootTracking.OrderedPair (n / 2) (OrderedPartitions.row n 2) (OrderedPartitions.row (n + g) 2)
+OrderedPartitions.original_threshold_two_consecutive {n : ℕ} (hn : 2 ≤ n) :
+  OrderedPartitions.RootTracking.OrderedPair (n / 2) (OrderedPartitions.row n 2) (OrderedPartitions.row (n + 1) 2)
+OrderedPartitions.TwoPole.original_shape (n : ℕ) :
+  (OrderedPartitions.row n 2).natDegree = n / 2 ∧
+    0 < (OrderedPartitions.row n 2).leadingCoeff ∧ 0 < Polynomial.eval 0 (OrderedPartitions.row n 2)
+OrderedPartitions.TwoPole.iterate_dslope_inv_G_at_zero {q : ℝ} (hq : q < 1) (n : ℕ) :
+  (fun f => dslope f 0)^[n] (fun z => (OrderedPartitions.TwoPole.G q z)⁻¹) 0 =
+    ↑(Polynomial.eval (-q / (1 - q)) (OrderedPartitions.row n 2)) / ((1 - ↑q) * ↑n.factorial)
+OrderedPartitions.TwoPole.taylor_residues {q : ℝ} (hq : 0 < q) (h1 : q < 1) (crit : -1 < Real.log q + (1 - 2 * q))
+  {z : ℂ} (gz : OrderedPartitions.TwoPole.G q z = 0) (iz : z.im ∈ Set.Ioo 0 (Real.pi / 2)) (n : ℕ) :
+  (OrderedPartitions.TwoPole.taylor n fun w => (OrderedPartitions.TwoPole.G q w)⁻¹) =
+    OrderedPartitions.TwoPole.contour q n - (deriv (OrderedPartitions.TwoPole.G q) z)⁻¹ / z ^ (n + 1) -
+      (deriv (OrderedPartitions.TwoPole.G q) ((starRingEnd ℂ) z))⁻¹ / (starRingEnd ℂ) z ^ (n + 1)
+OrderedPartitions.TwoPole.relative_one_of_twenty {q : ℝ} (hq : 1 / 6 < q) (h1 : q < 1) {z : ℂ}
+  (gz : OrderedPartitions.TwoPole.G q z = 0) (iz : z.im ∈ Set.Ioo 0 (Real.pi / 2)) {n : ℕ} (hn : 20 ≤ n) :
+  ‖deriv (OrderedPartitions.TwoPole.G q) z‖ * ‖z‖ ^ (n + 1) / 2 * ‖OrderedPartitions.TwoPole.contour q n‖ ≤
+    Real.sin z.arg / 4
+OrderedPartitions.TwoPole.relative_two_of_twentyfive {q : ℝ} (hq : 1 / 6 < q) (h1 : q < 1) {z : ℂ}
+  (gz : OrderedPartitions.TwoPole.G q z = 0) (iz : z.im ∈ Set.Ioo 0 (Real.pi / 2)) {n : ℕ} (hn : 25 ≤ n) :
+  ‖deriv (OrderedPartitions.TwoPole.G q) z‖ * ‖z‖ ^ (n + 1) / 2 * ‖OrderedPartitions.TwoPole.contour q n‖ ≤
+    Real.sin (2 * z.arg) / 8
+OrderedPartitions.TwoPole.principal_exists {q : ℝ} (hq : 0 < q) (crit : -1 < Real.log q + (1 - 2 * q)) :
+  ∃ z,
+    OrderedPartitions.TwoPole.G q z = 0 ∧
+      z.im ∈ Set.Ioo 0 (Real.pi / 2) ∧ ∀ (w : ℂ), OrderedPartitions.TwoPole.G q w = 0 → w.im ∈ Set.Ioo 0 Real.pi → w = z
+OrderedPartitions.TwoPolePhase.ordered_pair_of_parameter_limits {d : ℕ} {p q : Polynomial ℝ} {c L R : ℝ}
+  {ψ shift E F scaleOld scaleNew : ℝ → ℝ} (p_degree : p.natDegree = d) (p_nonzero : p ≠ 0)
+  (q_degree : q.natDegree = d ∨ q.natDegree = d + 1) (q_leading : 0 < q.leadingCoeff)
+  (q_at_zero : 0 < Polynomial.eval 0 q) (c_nonneg : 0 ≤ c) (c_lt : c < 1) (phase : ContinuousOn ψ (Set.Ioo c 1))
+  (far_left : Filter.Tendsto ψ (nhdsWithin 1 (Set.Iio 1)) (nhds L))
+  (near_right : Filter.Tendsto ψ (nhdsWithin c (Set.Ioi c)) (nhds R))
+  (front : ↑d * Real.pi + (Real.pi - Real.pi / 4) < L) (back : R < Real.pi + Real.pi / 4)
+  (old_model :
+    ∀ u ∈ Set.Ioo c 1,
+      0 < scaleOld u ∧
+        |E u| ≤ Real.sin (shift u) / 4 ∧
+          scaleOld u * Polynomial.eval (OrderedPartitions.TwoPolePhase.negativeAxis u) p = -Real.cos (ψ u) + E u)
+  (new_model :
+    ∀ u ∈ Set.Ioo c 1,
+      0 < Real.sin (shift u) ∧
+        0 < scaleNew u ∧
+          |F u| ≤ Real.sin (shift u) / 4 ∧
+            scaleNew u * Polynomial.eval (OrderedPartitions.TwoPolePhase.negativeAxis u) q =
+              -Real.cos (ψ u + shift u) + F u) :
+  OrderedPartitions.RootTracking.OrderedPair d p q
+'OrderedPartitions.original_threshold_two_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.threshold_two_window_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.original_threshold_two_three_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.original_threshold_two_consecutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.original_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.iterate_dslope_inv_G_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.taylor_residues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.relative_one_of_twenty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.relative_two_of_twentyfive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.principal_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPolePhase.ordered_pair_of_parameter_limits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+END targeted audit
+replaying OrderedPartitions.TwoPoleGeometry
+kernel_replay_exit=0 OrderedPartitions.TwoPoleGeometry source_sha256=73555ff5e0a21806a688657e971b0fac6de5169d8bc63291661e8e386da56c8e object_sha256=1ac8645500a5d44fe27e539bb66e0faf4327b13447a46e0ddb7d3058379f1fda
+replaying OrderedPartitions.TwoPolePrincipal
+kernel_replay_exit=0 OrderedPartitions.TwoPolePrincipal source_sha256=158e90353d21b83ce4f0f6835c4d16500231dfee7c3f75b8fa8a28cf5ba18415 object_sha256=7f857d3fd29ba828c6b7a55f3f121ee1f62e5684b675c7229a8e6964d7fc65dd
+replaying OrderedPartitions.TwoPoleRectangle
+kernel_replay_exit=0 OrderedPartitions.TwoPoleRectangle source_sha256=c071b2be1d4371fce45530391674f0b8e33ba7c6506c55f3910ad4b58cec34e1 object_sha256=d3c23659414d60085cc0182603c9c73364b85846d0a4f6228a2135814e430df5
+replaying OrderedPartitions.TwoPoleContour
+kernel_replay_exit=0 OrderedPartitions.TwoPoleContour source_sha256=8f1604830c88a82bf300d1b3c509d954db30430301803420b82059ec10c5783d object_sha256=1df8aaffa69b1b5e671eb438db1372842bd10dda6f269cfc0cd7df8bf0ca4354
+replaying OrderedPartitions.TwoPoleRectangleFTC
+kernel_replay_exit=0 OrderedPartitions.TwoPoleRectangleFTC source_sha256=e5e5a5adac0200b0c9d24f0b288031174cff7214293ede4715d8a4bb00e8f969 object_sha256=5a59b02662623dd1f4fbfef1c91e0905e37fe3ad70b4e843823ad3d54b741a6d
+replaying OrderedPartitions.TwoPoleWinding
+kernel_replay_exit=0 OrderedPartitions.TwoPoleWinding source_sha256=fada15b48526032d0b37a7c6bd5b6a8a05ba16eea7a13dec3ca491fede3aa2ba object_sha256=d81fe6baaa15f1e0d0d6facb56e2a73d5cee9907cccd11b98a205b70ea6ac06a
+replaying OrderedPartitions.TwoPoleCauchyKernel
+kernel_replay_exit=0 OrderedPartitions.TwoPoleCauchyKernel source_sha256=7c870e695e5bd331ff9ea780b2ddc936ee3b52a938fd9b629c986d1e54519f5d object_sha256=815bb7099ead5e416579730dc539068226231e85b2724ba75c9384419076fd2a
+replaying OrderedPartitions.TwoPoleTaylor
+kernel_replay_exit=0 OrderedPartitions.TwoPoleTaylor source_sha256=ee25a1ba482a52e4756d5e1b12db7b1c49d73aa6e0922c8337377c1bdecd4ac2 object_sha256=d0a6f15d8321c3e59b75ac59f4c70b41e9c0758a90eda1e1d46dfe632a6a978b
+replaying OrderedPartitions.TwoPoleSubtraction
+kernel_replay_exit=0 OrderedPartitions.TwoPoleSubtraction source_sha256=6e346a7c04c543f7d4bb819070a0b9f8121badc2b9b6386efb43480b81443151 object_sha256=ad890047f3808a57ecfe9516388097ec76e7cc31f113fdbd7635a0054c77d7eb
+replaying OrderedPartitions.TwoPoleResidues
+kernel_replay_exit=0 OrderedPartitions.TwoPoleResidues source_sha256=34d00744eabb75e46c13044f0e5bbb281eff8217ad202ca5d52883ab4c77916f object_sha256=1aef77695ca913b38d78eca45fa0bf98c75f150205e4700ba3b727e1bd527a59
+'OrderedPartitions.TwoPole.critical_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.upperPole_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleBranch
+kernel_replay_exit=0 OrderedPartitions.TwoPoleBranch source_sha256=286e79b26cdd79747cdcc8ec9a649d29758906f729c48ff9a7681bb683440bfc object_sha256=2c4d71a1e8408ee5f90f18b7ee291cdfb50ce475f3f3f40d736f7bf860c97b5d
+'OrderedPartitions.TwoPole.pole_height_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.pole_height_vanish' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleHeightLimit
+kernel_replay_exit=0 OrderedPartitions.TwoPoleHeightLimit source_sha256=0d8c9223ff018a8276bf6b2f06d3ba0ae27d3459ae8d685672a3547da9dcacfe object_sha256=7364b1632a7bff665a87f80557130cdf867b317b57920ef42ef0764d63dd5d7e
+'OrderedPartitions.TwoPole.pole_right_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleRightBounds
+kernel_replay_exit=0 OrderedPartitions.TwoPoleRightBounds source_sha256=250385b7239d35803c9b22e581e44e49a57440567e3b22bcfabae73974224b6c object_sha256=926b44090a89661cf362ecf0fe5985e3b2ee7908c83bf02c04921806b0e55a4f
+'OrderedPartitions.TwoPole.beta_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleAngles
+kernel_replay_exit=0 OrderedPartitions.TwoPoleAngles source_sha256=d6f1e2f6eb8be424c8ae293d203c2cf75aba845bb3df7b27d33e03fd10935cc3 object_sha256=083350dab8bab946623655b67dddaa72f69752ad42a92655906fcbfda89d0ded
+'OrderedPartitions.count_above_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.count_zero_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.count_one_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.first_jump_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.firstJumpEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.first_jump_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.FirstJump
+kernel_replay_exit=0 OrderedPartitions.FirstJump source_sha256=0494d98e035cdec3dbf7cc313599fac47f8287d6c838c1eaeccdd0be0db3bb82 object_sha256=d3d1b924c0126d039c37b63539374e9d311ae171240963e00f9a5653ec54baa9
+'OrderedPartitions.coeff_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_first_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.FirstJumpRows
+kernel_replay_exit=0 OrderedPartitions.FirstJumpRows source_sha256=bb653dcf6e7054cdff90f8727a45ca6207983dde7ac2e345d7852837d7f97089 object_sha256=170d8926726fe0c286e0ad0f26cd9503d3f083dd04403995c37c32eb290c7515
+'OrderedPartitions.large_append_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.lastBlockEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.blockRow_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.LastBlock
+kernel_replay_exit=0 OrderedPartitions.LastBlock source_sha256=d78ee32e13d51ac16a92e6949b99894944453268924e36ce88d3977368009466 object_sha256=08c8930e87a28186d2bbbe811ab253c2c0ba2bef994ae904bda96b1cb66907fa
+'OrderedPartitions.count_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.coeff_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.row_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.LastBlockRow
+kernel_replay_exit=0 OrderedPartitions.LastBlockRow source_sha256=c55767eb08cbaae0bcde68ae1834b91ba4040f4409e178840da2f9ef3fac7b4f object_sha256=36d0d301ec2e9758fe01d38bf68d64e2f16ac18d96b37ad59a66c2f3c71bdbcc
+'OrderedPartitions.row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_eq_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.markedCount_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.free_resolvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.marked_segments' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.MarkedSeries
+kernel_replay_exit=0 OrderedPartitions.MarkedSeries source_sha256=a2553feea323374d6cb5cf07ba77eae7a7346606b7921bdb0c2f71ec598b34a7 object_sha256=9e0e82c69efa995e8159abe6d312d4da8ddfb98e9247c2995e37819306ee9d4c
+'OrderedPartitions.moment_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.original_egf' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.OriginalEGF
+kernel_replay_exit=0 OrderedPartitions.OriginalEGF source_sha256=3d63f6ca2b5ba35f4a0a5cf6703e3355f2caffa64d5e4f5ee01ec94a02b6124d object_sha256=fd73f54fec2c7f304a271040d64b9c821916442647dd59ee785594d085fcdb53
+'OrderedPartitions.TwoPole.iteratedDeriv_inv_G_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.inv_G_hasFPowerSeriesAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.iterate_dslope_inv_G_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.original_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleOriginalTaylor
+kernel_replay_exit=0 OrderedPartitions.TwoPoleOriginalTaylor source_sha256=7eb23430e97b9f99a85df568c3a2b0ae65c6f3cb8f14263ce67a614a73456238 object_sha256=c4692474d5afb751cdb0707f258c175b0613c68c0525382bf3626686accc5e24
+replaying OrderedPartitions.TwoPoleTwoSteps
+kernel_replay_exit=0 OrderedPartitions.TwoPoleTwoSteps source_sha256=e31de23ee9cea48468c0744d919406183208a997d6154d659f4aab63679e1c45 object_sha256=cab9639ddd759741d682cc85d6e06048bd475daf8145b94e8a467a984a1cb8c5
+'OrderedPartitions.TwoPole.rowScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.cosine_model_of_residues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.cosine_model' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.realError_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.realError_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleCosineModel
+kernel_replay_exit=0 OrderedPartitions.TwoPoleCosineModel source_sha256=4fdcf8d42b5986a6c685d0cf21f593c4b563777b17674abd05e5188c40e8aea9 object_sha256=676f930390bbf23f9f55bd7f61e6f23ee234a2fcc8b13f2c0cccee2c07052632
+'OrderedPartitions.TwoPole.phase_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.phase_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPolePhaseEndpoints
+kernel_replay_exit=0 OrderedPartitions.TwoPolePhaseEndpoints source_sha256=157c9a5a45ba0f1bcac0abc1d68115940d3fa8d15d4f203dc2292bc0645058c7 object_sha256=00b5c6a3e898996d4e10f16e812c834db0b4a872ae71f85e366445a9500e7457
+'OrderedPartitions.HardRod.delay_zero_spacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.HardRod.delay_sturm_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodDelay
+kernel_replay_exit=0 OrderedPartitions.HardRodDelay source_sha256=44137cc4ffbaed4bbf1c78a65bf27c7b2f4528408aeaf752669607d6b30f5ed3 object_sha256=6def993e3a96d95478656ebccf6426de5e6bb04f724a9d120dd656d871864967
+'OrderedPartitions.HardRod.coeff_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.HardRod.phi_delay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.HardRod.phi_sturm' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodPolynomial
+kernel_replay_exit=0 OrderedPartitions.HardRodPolynomial source_sha256=54f4fea01d0b1940c7ee1cd42d7daef4a4d0c93f257263fa99066d39cca2c414 object_sha256=b67dcf0e23c33b78ca1686d57687c8778363fac0904e9a75a482623945154648
+'OrderedPartitions.HardRod.phi_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.HardRod.phi_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodDegree
+kernel_replay_exit=0 OrderedPartitions.HardRodDegree source_sha256=6a48e2bea75424de57ad1381648e0727e8e143bedd85867cb4767ded54f06b58 object_sha256=4c621b552674b261a3ec2ebde68c446db9e9c95bbdd7cb89a30cd1d322dde5d8
+'OrderedPartitions.HardRod.phi_window_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodWindow
+kernel_replay_exit=0 OrderedPartitions.HardRodWindow source_sha256=1bbd60e729ed1d7691a98cd2c176d8769d42adbb0e96fa2c61105dc2fbc83d68 object_sha256=adffae958ae3937f54a717fe33a2933dd7a04672f1577dabe7f9d7ca6f94887a
+'OrderedPartitions.moment_gap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.first_jump_brackets_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.QuadraticBracketing
+kernel_replay_exit=0 OrderedPartitions.QuadraticBracketing source_sha256=788668d3d3fb00f17ef7f5f156b614a235bdc50d8919ecccd5bc24fd516373e8 object_sha256=4f47cdcb812635eeb548c4670bea590ab9d814f6b28aaebb922175c9e2d50493
+'OrderedPartitions.QuadraticOrder.adjacent_of_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.QuadraticOrder.adjacent_of_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.QuadraticOrder.normalized_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.QuadraticRootOrder
+kernel_replay_exit=0 OrderedPartitions.QuadraticRootOrder source_sha256=bfb2d364dd7d625a416e4730ba6aa123d98d40436cd46399dc488fd9655b9f94 object_sha256=a1dc873923e167b78939277104e3e74be593f4e9544b9fbadcb0d9a34a4a3677
+'OrderedPartitions.InterlacingStep.RootArray.exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.InterlacingStep.RootArray.eval_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.InterlacingStep.RootArray.roots_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.InterlacingStep.rise_of_alternating_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.InterlacingStep.eval_between_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.InterlacingStep.rise_of_opposite' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.InterlacingStep
+kernel_replay_exit=0 OrderedPartitions.InterlacingStep source_sha256=9a5a4b6de928405c5ce930ee19211703cbff1f6a436b67da22591876862c5454 object_sha256=c28f5cf6d84b11a25382d1c8974bfc9ede4378cc46b3d83714233f7ad2fc3443
+'OrderedPartitions.HardRod.unit_interlacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodInterlacing
+kernel_replay_exit=0 OrderedPartitions.HardRodInterlacing source_sha256=ba93fc13b2d31e48dbb5c92124e4bfe7e7c8fc3d963366656020def3ab35c36d object_sha256=812103196c1ad9d5927bd92aefb52c36c4397b9a519879b292ad96f760fcffaa
+'OrderedPartitions.HardRod.phi_shift_at_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.HardRod.positive_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.HardRod.phi_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodResidue
+kernel_replay_exit=0 OrderedPartitions.HardRodResidue source_sha256=13d064c10986d302ead42bcd07bb9aa8e5cbbe6f6955d0f8c427195155ec51b7 object_sha256=56d1255b182e3e0a9efd3f3e1ca804d671b7428d1b0ecbaf466725e2c99b36dd
+'OrderedPartitions.RootTracking.simple_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodRootTracking
+kernel_replay_exit=0 OrderedPartitions.HardRodRootTracking source_sha256=e7f37be2550d057bd5c98532c253f5b09a877212777426c98dee75162c14e1ae object_sha256=d04af8a87f2ef83341cdfcfb18d26e6ea6e777de5404529d0f766ad050b84820
+'OrderedPartitions.RootTracking.equal_of_alternating_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.HardRodRightBrackets
+kernel_replay_exit=0 OrderedPartitions.HardRodRightBrackets source_sha256=a97d6d682ba5926545f469ef16248c1d0c8a6b417690e5cbed0361934e205b42 object_sha256=52d72456f8ead7c16f0b461d4ce07cbb0ea7e575a8964c9abf88b423bf57c816
+'OrderedPartitions.TwoPolePhase.next_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPolePhase
+kernel_replay_exit=0 OrderedPartitions.TwoPolePhase source_sha256=547ccd955ff911797ea0fa8950d1ef613e0b4f88cdef6ecf53e01add3423095f object_sha256=6ea601a6557ebc9510c88af789b2306562aa1947e56cf99b7c2a69c978354a27
+'OrderedPartitions.TwoPolePhase.strips_of_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPolePhaseStrips
+kernel_replay_exit=0 OrderedPartitions.TwoPolePhaseStrips source_sha256=1dde245a2e654d5dd41832bd498cf2cbdcbb66d56fa95b60b592cdd263a80305 object_sha256=af850457231ecf1a526f23c9d7033881b0de7227ede9357e87ea4de16ef45c47
+'OrderedPartitions.TwoPolePhase.root_array_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPolePhase.ordered_pair_of_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPolePhaseReadout
+kernel_replay_exit=0 OrderedPartitions.TwoPolePhaseReadout source_sha256=969dad5bb02cb3b7c7eb7f2bdcbc76d34490b182d8cf63ab2b4078ce65e768a2 object_sha256=b12d028c40c5a5f2cf47c09eb387df6043d5b422010d76d5f8cfe4667af52ded
+'OrderedPartitions.TwoPolePhase.ordered_pair_of_phase_limits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPolePhase.ordered_pair_of_parameter_limits' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+replaying OrderedPartitions.TwoPolePhaseLimits
+kernel_replay_exit=0 OrderedPartitions.TwoPolePhaseLimits source_sha256=236062dad6f49e1ffe4237305e39e18612623d825b78ec4d86065947c5ae7749 object_sha256=81377f7db382ee410a8f75f9d5af56ff65d5eeef94fadf64aa25f8f711c951dd
+'OrderedPartitions.QuadraticExact.rows_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.QuadraticExact.original_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.QuadraticExact.original_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.QuadraticExactRows
+kernel_replay_exit=0 OrderedPartitions.QuadraticExactRows source_sha256=d19044fe2d7d2665b474517d99964730a7bf6dbeb3f5dff114cf030713e1221e object_sha256=c94b4d813813d2aacebd9fdf5abe45cd89584f4ff77a02459b401c8a6688e0d8
+'OrderedPartitions.TwoPoleFinite.table_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPoleFinite.tablePoly_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleFiniteRows
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteRows source_sha256=23d9066bf7cec4ec8f2c18254a9a96d81fb054b7e35f16c4a9ccdd4d0750c029 object_sha256=1348158966ee387ed96952eb26b934bfe16afd0e885946ffa6f40db9db119850
+'OrderedPartitions.TwoPoleFinite.original_in_boxes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPoleFinite.stay_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPoleFinite.rise_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleFiniteBrackets
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteBrackets source_sha256=b878029d55cde30a338278800855f4930bdcb1ad337a7e2e5af8c94fde9875b6 object_sha256=0ca72645902489a31c51afe4eb702265d9114b8856918b2269d7276c02a686c2
+replaying OrderedPartitions.TwoPoleFiniteData.Table
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Table source_sha256=14bb01080ebeae61a68e8eb7dd25e5fba83d9cdbac63c48214dc9eabeabc616e object_sha256=778d2312ae6e3d885bf628bca2c71e3a0e6938703918a5245e3f99dafff4a9a3
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At02
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At02 source_sha256=385881c2ed19a9b7f3fb806df0a56425540dea55ff005500cb17a858478104d1 object_sha256=fa137efc80029f1881d6a46d7f4e7b2e6182ca19b755d5aab3c052d15a5ecc53
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At03
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At03 source_sha256=53b46d882df1da5d3b5614b41ca4a0e443f2efb5d6cb2a8734ecf86248c100c4 object_sha256=36e15f28fd33abf682b580a16e0165c9a32dee0b9104dcc1db98bf89d795267f
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At04
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At04 source_sha256=31499d6b90639d534c68082fa3fe9b36d79bf994458c9668d5968722a137cde3 object_sha256=1c75f0fbdd67ae30d45127cbf3185a4a806b8a76f2749e5da1637cea48eef637
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At05
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At05 source_sha256=2a2099c51d285d762f087fbc6d5c9689d81bd0ed8cc79c6aadcea039479e1286 object_sha256=7116685e5d8da3fd19f62c475918cb4c934c5d821da8f6badff506562786f8fd
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At06
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At06 source_sha256=32530319fc105ebb053bc4d4ce898a3215ef42fc608498eee1b8336cbcad4011 object_sha256=d78945bb7170624672bd29a4840796b96e1ebf6a87d3ede16ce2330588d1ef60
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At07
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At07 source_sha256=9e75808527e1e6e0dd0f2cb611f5246e8bf1743d15a3fafaa0fb2ed2bd856289 object_sha256=35afbb4bf9ba17bf3fe527485cdd78aa3f2bcd096c4e5ba495e43532723efad3
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At08
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At08 source_sha256=f81f2557aeb4a42df8239db21c6ebca63020198fa585174d9ae436c7532ff9ff object_sha256=c1dd0e240ee4421604e0959ba2447088f1d14459edc0e0a08ae95f9015d82e17
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At09
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At09 source_sha256=b6a3bbd65f275d31ef47a473a5a92abcf41eb60621354fffdbdcb7f92d9f6e2d object_sha256=3c53ff28f7e514bdaef97da8a85b3daf414b0307659da38679e74c5a83134217
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At10
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At10 source_sha256=1a5942e99b16522ec642e6d5d43e443e864ed792d5035be881ca81734fbc29f5 object_sha256=551349610f955941faa7482e5ed0df693deea9433ac4d43f3f6c5e61a4e9e5ff
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At11
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At11 source_sha256=eebf85bba2d77d964474e1c3738cb29816b1677b90728592aca6f45d475a5925 object_sha256=44edb5c64e28c386c6b5f7828326073edf87002f82e822013e0b934b4df87c7f
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At12
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At12 source_sha256=0819411f7b28e213454d2a6d6d0d72f890f657cba022fb443c732ec9c1a8aeb4 object_sha256=d43b62c8a55ee026dbc028f7b6297501846bd22b5f4b9b3f6eb5cc8c418122f0
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At13
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At13 source_sha256=1695c9a0960b25d89ecc6df34f1beebda9e4cc1fe9b941c75ea15ee7ee6f9858 object_sha256=b5df0c2dc43f02088cc15fc0bc14f149e5f065e12d0ce61c6e52d338bbeb905d
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At14
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At14 source_sha256=972515f1d749cf17308a7e4ec45ebc0cc41845a7f51fd4663f6e5d785e62e1da object_sha256=cf9978984ba325f90adbd74f894c85cc2d342d4e05a672d655c959583e42308f
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At15
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At15 source_sha256=60fa842f32bf3e272c024b632755fb65111d8d2234404df55aa0c53d9b8478a2 object_sha256=8ba4af01ee29bb0096f25dcb9dd7a277a5e921c70899a3d15ccde33ebd5dfe70
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At16
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At16 source_sha256=56de0a82334e1db0118a76a90dbe5a755a6844b4783f14badbe80c413093119a object_sha256=fc729c2340d26e64e316fa45a70fa2153360ec4f02aa5b348448ef2b4b74895c
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At17
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At17 source_sha256=c5cf232728c08b90c016055a8433350cf01f630ed99c403bbc648fe45ea6817b object_sha256=26640c609f2ecd0e87a604108377118b240b4d2aab81d4f1ac7ececd62a121c6
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At18
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At18 source_sha256=4168b22b46904117d6e7ccdf416a35dcb13f9c75e479a8e24391a6001c535bb3 object_sha256=3634a699089eed8b8c9cb64e39f7e10f8b824fe454642ea7bcf65849ad9e02fa
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At19
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At19 source_sha256=b7217b619c59ce85814ff3a407dcce40d6308e6cdd24d897e4f4042462bed32a object_sha256=3a34beaf08091b63fc344105c22f3adcba6e92539d65b7eaae449607848cbe9b
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At20
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At20 source_sha256=13100573f37fcbd2692671bf9d7ddee69a14de37d6f8f8e1b20f3ce30636924c object_sha256=1c2a901e1aae5cd34b6e043b9e449650ee87df5675b1a1207347191802789e1d
+replaying OrderedPartitions.TwoPoleFiniteData.Pair1At21
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair1At21 source_sha256=87452a9ec175f339f6e73fba125f66b9291a536c58ebe199bb6cb1d329e6ec8e object_sha256=f6c6be53a04b3f62dade92d3a9041086443bd292b085ef0853167ef1e310f460
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At02
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At02 source_sha256=7372fefb151d2239ada7a6b2985e34e425ba09da5d02b051f3b8a09a9499314f object_sha256=283a3e367f4df072c437ad9b2efa36776421abd36d605343763ec4fb2a98e7e5
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At03
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At03 source_sha256=e07af19945b53240767a3512dc89906a5c376a5d574d0ac2afed0525454c266d object_sha256=7276ea784bd7d09c10accd1ccf2764c3586f3b4ba5441ea6ee32c3cd1a82a64a
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At04
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At04 source_sha256=dc4f5d5a40a094620f785677b1a733f9ca0c6147fec2c6fa0d48201b8bb43f85 object_sha256=f456bbc13d2fc87b1a4a5139e262a8cd31cd6a8f9aeea11333fcb385b0ee4eb9
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At05
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At05 source_sha256=8542194664fbd0b46ee2317eb203c55ed28e8580f8b66362665c6f45b8efa94f object_sha256=ad68c14f28907dcd8f0f61ba6710477af04f4c07fbe2547ab9732cdbfdb28d0a
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At06
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At06 source_sha256=8866284de94e8b07013e664fd4814c24126775335415ad24aeec3e1002cb9bc3 object_sha256=d943849ba87be4d38b46973453bd8d6da4f91ffb382e10c81f25903423108627
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At07
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At07 source_sha256=2bb939f389cd9c3f700932c4e41cbe276cc5db873372052dace8708d18e3372f object_sha256=5e6a69d0818dfc98e9c057f98fec3afaf32ff71e9cee65f5e4d9d73911bf106e
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At08
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At08 source_sha256=da918de872e736c22f38e438eddd324387d6dbec809df929731dd112e06a7b75 object_sha256=44a154bbc6e61e4bf2ccd45d014bc9cc311497e870e4ea8391a1d16fccd43596
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At09
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At09 source_sha256=155a01811d3fee52f7cb853e51f824a7f64ab607bc68f5561c79cfbf98bccd43 object_sha256=d206586d8f17d7d02962eb874a3a07145579d62eceff7f5a5fe9769f75068c64
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At10
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At10 source_sha256=90c5a20d33b62fcdd2018436dedc54d23155707b21a61140dd03a935b03c8738 object_sha256=d13d7257ab92f9b935853a6715b53ae412b490f6449a4166a92c2d39eb858c0e
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At11
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At11 source_sha256=6a5a47a64e644b53f308b6800eb7108e1ba3059c553115051ee2ef98ad401511 object_sha256=6b0d2ff2e055e52ec4761a10b68246fe07976325158c6d585acf54c7d07eb956
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At12
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At12 source_sha256=70e71ea579fec54b38a4b6b268de86dd8315ba64337956153fed6e43a7514dbe object_sha256=54f8739b07099bcd721a803f374c2663404c971d34207b0b0af5b335a4627717
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At13
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At13 source_sha256=ba7650fa6c573cf12c19663dd2da47373f6bfcc0316d22c7fd0b64f487fd6c0f object_sha256=761aee2f1e91d6fa15737352a85e1e063adcfc442f825faadd1528428b840e94
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At14
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At14 source_sha256=97aa71f6dba1a9bd236b883fabc67062ade7aae7ecb1936c4ffa71549bc29d1a object_sha256=9acb603c0d248710c329d910d4527e5f367ea9d54f0745ae71aa348ed7c40824
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At15
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At15 source_sha256=661ccf05365fe4fc6a877faf990643aeda75f0e883e447429078dda5cd313ef0 object_sha256=ba11450a3af2800f46ce355a0f39394add3a511020f5e64fc65d2b6be3d903f9
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At16
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At16 source_sha256=b6dcb013905ddf516bbdda63d104a9075fe4fe12685693868b290af55e1d96f6 object_sha256=08d631597e45ebd1e9e5dc88f33eac7f310a314e232b7685461c170b39d576cf
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At17
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At17 source_sha256=0bf825de377f6cfa2b39f6b209ba607c490946f5d5751bb487b25a78ce193cdb object_sha256=1c20c4cf7c1125292150f0aa569b6dffa95c39f2e9d3f7314a29c362ad8461e4
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At18
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At18 source_sha256=19382a82eab5cd1294daa7fc67a2a86b8f9c42050bf0a33762a0501ff7cc3d64 object_sha256=be6c6912e43b74253e8e97b345eafd39361fd056a6e8188d0d11ba7dc1d2f037
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At19
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At19 source_sha256=9fa5d08c5a398d2168ee02112d2066f9254ccb8a2caf899721a5ed5a0ad95af0 object_sha256=3f2f15c00e23070236d6c9ec96e551dc0c72f2264862b004c6e7c3bdab11d97c
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At20
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At20 source_sha256=efb52e00ccca42f33d9cfc6ad4cea875587c36903c1f7f217ae296644649a69f object_sha256=e9950936275ee295e12b3acfbda8bb493e56c26be1f72d0865411b28bfc26307
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At21
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At21 source_sha256=7ce932454761002cf615157b0e3c6fae97642675f940d4cd2f8bff7d61af91a6 object_sha256=58061f0c514d574666d9d7092c12c78d3b528fd118bc137f011e29fe10ed2fae
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At22
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At22 source_sha256=4d30fa640d678f737a247270a493458a911c7048d92f49727ac38ae6434e6975 object_sha256=363940bbeb28eacc0279a406e653785b186045e03c7d7a181d9543236b2331b9
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At23
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At23 source_sha256=5cf982d96b06a14c6cfb6b3c98a297f847e4ddc000d4d048d18a5c860d4344b3 object_sha256=75c223140fb926c7a4a76c85fe851009c542915266df941331c936e60e4ec92c
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At24
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At24 source_sha256=b3617a9aeb62c1dc9aec5d67d5d5c18abf7ac142718bbd3aaa67dad6dc35841b object_sha256=f8830348a38cb26d570ca9154268abaf88ce1927cc4801fcc54e73f446231789
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At25
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At25 source_sha256=4a93328e8a6164e78a689b80c8449668b8ce17237bd4d92299a0294af346c3a2 object_sha256=7bfdd1d0677113c7b19b35ab12be3e989d65ff053978139933e9321add7db231
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At26
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At26 source_sha256=24f9e393e4aec828cabaf3ff543594b1572b5c4a2c4b492d2b2f2128fdd16f20 object_sha256=2e33685f4d47eea31338a9d506206ba6bbcd2d72bf8061aef9fd5ad6fa1f32a2
+replaying OrderedPartitions.TwoPoleFiniteData.Pair2At27
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteData.Pair2At27 source_sha256=93c389db821ffc7c14dc38dd90c759a28ffde47543f5ca7c01758853556ce761 object_sha256=f831289606732e2e9c17196a4cbe875fa6e189fdb4843d91d98e66aca9535b34
+'OrderedPartitions.TwoPoleFinite.original_gap1_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPoleFinite.original_gap2_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleFiniteVerified
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFiniteVerified source_sha256=9baffe92b7e5cbbc6aad5679fa0fc94d05ecaabcfd136f48cef6cf15eef0831a object_sha256=0bdca811f509d7ee4fb439168f8373fd58a36d8c2c3c3cb374c839503a9918a4
+'OrderedPartitions.TwoPole.original_pair_of_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPole.original_all_of_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleModelReadout
+kernel_replay_exit=0 OrderedPartitions.TwoPoleModelReadout source_sha256=2c2743fadba61ac29c682d0a056cf5c58f239b7423004b8a67c9473d51a020f9 object_sha256=a685b9df1ee86d1c543a97e47bf3cd7498aa9cfe9cc37f6f0c0c16f01cb243c9
+'OrderedPartitions.TwoPoleFinite.first_gap_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.TwoPoleFinite.first_gap_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleFirstRows
+kernel_replay_exit=0 OrderedPartitions.TwoPoleFirstRows source_sha256=184ca5f2f5494e8f1db9938c4d2c38af54ea33c4ccb39b8f0845ffbd734dfa5d object_sha256=373d8cfab928a95fd3a6a5dc427708f4882bc58ca21385afec4148f3000ccbbe
+'OrderedPartitions.original_threshold_two_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.threshold_two_window_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.original_threshold_two_three_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrderedPartitions.original_threshold_two_consecutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying OrderedPartitions.TwoPoleAllSizes
+kernel_replay_exit=0 OrderedPartitions.TwoPoleAllSizes source_sha256=9afe1bdd8bcc1b6a50ddc553ff3fbdf143dabca2e799684117d59c0a5eec5877 object_sha256=601a89e89c6e0091905df84c5caf86ce26187fd2258526d584c47f94bdaa91b1
+PASS 93 cold project modules, 93 independent kernel replays, 92 source axiom reports and 11 targeted reports
+source_cold_verifier_exit=0

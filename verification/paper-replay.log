@@ -1,0 +1,52 @@
+loose source anc/finite.py: exit 0
+PASS: independent ordered last-block and unordered associated Stirling rows n=0..22
+PASS: all old indices 2..21 and exact negative-root isolation for each adjacent pair
+PASS: 230 disjoint sign brackets; analytic cutoff old n=20
+PASS: five rational inequalities used in the contour estimates
+loose source anc/two_step.py: exit 0
+PASS: two exact coefficient constructions through 29
+PASS: O_n and O_(n+2) for 2<=n<=27, 390 strict brackets
+PASS: two rational analytic bounds, valid for all old n>=25
+source ZIP anc/finite.py: exit 0
+PASS: independent ordered last-block and unordered associated Stirling rows n=0..22
+PASS: all old indices 2..21 and exact negative-root isolation for each adjacent pair
+PASS: 230 disjoint sign brackets; analytic cutoff old n=20
+PASS: five rational inequalities used in the contour estimates
+source ZIP anc/two_step.py: exit 0
+PASS: two exact coefficient constructions through 29
+PASS: O_n and O_(n+2) for 2<=n<=27, 390 strict brackets
+PASS: two rational analytic bounds, valid for all old n>=25
+loose source pass 1: exit 0
+loose source pass 2: exit 0
+source ZIP pass 1: exit 0
+source ZIP pass 2: exit 0
+Both clean builds produced the same PDF bytes. ZIP contents and CRCs checked.
+0bf7d05219d463a0295d469f5c78410b7db4233b1710ab12883fa32aefcd9568  main.pdf
+08f195585ade47a60d7436b388aa5bdec13adde5ee162c916bd4a05cbdbd707a  arxiv-source.zip
+9f39720f5255710056a9d10dae081b4e05888b43edaee13a4376adc2751ca6bd  main.tex
+7df9c8940ea1673bf475d9e752339050fe50943bb130fafc51d263bbf2cd94fc  anc/finite.py
+9da8933578b09a324b358d4359f446adba37269e07db46df31452707d6da2be3  anc/brackets.json
+2c3624c4f5857d141ef566d3d9173478311c494422c7a8bdfc427f1daa5826f6  anc/two_step.py
+7ebbcb7923d8bea6cc0aa6820a3c253bc4d23a37d1ecbb890c27c62e85e30c5a  anc/two-step-brackets.json
+Title:           Interlacing for ordered partitions by nonsingleton blocks
+Subject:         
+Keywords:        
+Author:          Bowen Zuo
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.29
+CreationDate:    Fri Nov 27 08:00:00 2026 CST
+ModDate:         Fri Nov 27 08:00:00 2026 CST
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           6
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       218361 bytes
+Optimized:       no
+PDF version:     1.7

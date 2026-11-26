@@ -1,0 +1,98 @@
+name: Verify the threshold-two proof
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: threshold-two-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  finite-certificates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check frozen inputs and replay both exact certificates
+        run: |
+          sha256sum --check SHA256SUMS
+          python3 -B paper/anc/finite.py
+          python3 -B paper/anc/two_step.py
+
+  strict-lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Check sources and prepare a separate dependency workspace
+        shell: bash
+        run: |
+          receipts="$RUNNER_TEMP/threshold-two-receipts"
+          mkdir -p "$receipts"
+          (cd formal && sha256sum --check SOURCE-SHA256SUMS) | tee "$receipts/source-hashes.log"
+          dependencies="$(mktemp -d "$RUNNER_TEMP/threshold-two-deps.XXXXXXXX")"
+          cp formal/{lean-toolchain,lakefile.toml,lake-manifest.json} "$dependencies/"
+          printf 'THRESHOLD_TWO_DEPS=%s\n' "$dependencies" >> "$GITHUB_ENV"
+
+      - name: Install the pinned Lean toolchain
+        uses: leanprover/lean-action@fe408643ea7367d8c0404a8be3975bb145f5fb64
+        with:
+          lake-package-directory: ${{ env.THRESHOLD_TWO_DEPS }}
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-github-cache: 'false'
+          use-mathlib-cache: 'false'
+
+      - name: Prepare the locked Mathlib imports
+        shell: bash
+        run: |
+          receipts="$RUNNER_TEMP/threshold-two-receipts"
+          grep -rhE '^import Mathlib(\.[A-Za-z_][A-Za-z_0-9]*)*$' --include='*.lean' formal/OrderedPartitions |
+            cut -d' ' -f2 | sort -u > "$receipts/mathlib-cache-roots.txt"
+          mapfile -t imports < "$receipts/mathlib-cache-roots.txt"
+          test "${#imports[@]}" -gt 0
+          (
+            cd "$THRESHOLD_TWO_DEPS"
+            lake exe cache get "${imports[@]}"
+          ) 2>&1 | tee "$receipts/mathlib-cache.log"
+          cmp formal/lake-manifest.json "$THRESHOLD_TWO_DEPS/lake-manifest.json"
+
+      - name: Cold-build and independently replay all 93 local modules
+        shell: bash
+        run: |
+          if ! ulimit -Sn 65536 2>/dev/null; then
+            printf 'Keeping the current open-file limit of %s\n' "$(ulimit -Sn)"
+          fi
+          test ! -e formal/.lake
+          receipts="$RUNNER_TEMP/threshold-two-receipts"
+          python3 -Bu formal/verify.py "$THRESHOLD_TWO_DEPS/.lake/packages" 2 \
+            2>&1 | tee "$receipts/lean-cold.log"
+          grep -Fx 'PASS 93 cold project modules, 93 independent kernel replays, 92 source axiom reports and 11 targeted reports' "$receipts/lean-cold.log"
+          {
+            printf 'module\tsource_sha256\tobject_sha256\n'
+            sed -nE 's/^kernel_replay_exit=0 ([^ ]+) source_sha256=([0-9a-f]+) object_sha256=([0-9a-f]+)$/\1\t\2\t\3/p' "$receipts/lean-cold.log"
+          } > "$receipts/module-receipts.tsv"
+          cut -f1,2 "$receipts/module-receipts.tsv" > "$receipts/hosted-sources.tsv"
+          cut -f1,2 verification/module-receipts.tsv > "$receipts/spark-sources.tsv"
+          cmp "$receipts/hosted-sources.tsv" "$receipts/spark-sources.tsv"
+
+      - name: Save the verification receipts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: threshold-two-verification
+          path: ${{ runner.temp }}/threshold-two-receipts/
+          if-no-files-found: error
+          retention-days: 14

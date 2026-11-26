@@ -1,0 +1,283 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks,pdfauthor={Bowen Zuo},pdftitle={Interlacing for ordered partitions by nonsingleton blocks}]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\renewcommand{\labelitemi}{\(\bullet\)}
+\allowdisplaybreaks[1]
+\title{A sharp three-row interlacing window for ordered partitions\\ by nonsingleton blocks}
+\author{Bowen Zuo\\[2pt]\small East China University of Science and Technology}
+\date{November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let \(O_n(t)\) count ordered set partitions of \([n]\) by the number of nonsingleton blocks. We prove that \(O_n\) has \(\lfloor n/2\rfloor\) simple negative zeros and that \(O_n,O_{n+1},O_{n+2}\) strictly interlace pairwise for every \(n\ge0\), with the empty root lists at \(n=0,1\). The window of three is best possible uniformly in \(n\). A single rectangular contour gives a two-pole approximation for all parameters in the oscillatory range. Its error is small relative to both the one-step and two-step phase increments. Exact integer sign brackets complete the small ranks.
+\end{abstract}
+
+\section{The ordered problem}
+
+An ordered set partition of \([n]\) is a list of disjoint nonempty blocks whose union is \([n]\). Within each block the labels are unordered. Put
+\[
+ O_n(t)=\sum_\pi t^{\,\#\{B\in\pi:|B|\ge2\}},\qquad O_0=1.
+\]
+Selecting the last block gives the original labeled recurrence and the corresponding exponential series
+\begin{align}
+ O_n(t)&=\sum_{s=1}^n \binom ns t^{[s\ge2]}O_{n-s}(t),\label{eq:rec}\\
+ \sum_{n\ge0}O_n(t)\frac{z^n}{n!}&=\frac{1}{1-z-t(e^z-1-z)}.\label{eq:egf}
+\end{align}
+Here \([s\ge2]\) is 1 if \(s\ge2\) and 0 otherwise. The degree is \(d_n=\lfloor n/2\rfloor\), attained by taking disjoint pairs and, if needed, a singleton. The leading coefficient is positive, and \(O_n(0)=n!\) counts the singleton lists. The first four rows are \(1,1,2+t,6+7t\).
+
+This is the cutoff-two case of Alexandersson's conjecture on ordered partitions marked by their blocks of size at least a prescribed cutoff \cite{alex}. The ordinary Fubini polynomials mark every block \cite[Section~4.3]{fubini}. For \emph{unordered} partitions at cutoff two the generating function is \(\exp(z+t(e^z-1-z))\). It agrees with the shifted run-sorted descent series of Alexandersson and Nabawanda \cite[Theorem~3.2]{runs}, whose consecutive interlacing result is \cite[Theorem~3.3]{runs}. The ordered lift that orders only the nonsingleton blocks has series \(e^z/(1-t(e^z-1-z))\) \cite{lift}. At rank four the fully ordered row here is \(24+45t+6t^2\). The unordered row is \(1+11t+3t^2\), and the ordered lift is \(1+11t+6t^2\). B\'ona and Mez\H{o} study unordered partitions with singleton blocks excluded \cite{bona}. Fang's eventual interlacing theorem at cutoff four concerns unrestricted unordered partitions \cite[Theorem~1]{fang}. We use his method of isolating roots with continuous phase intervals and reading the later-row signs there, with the generating function \eqref{eq:egf} and a single contour.
+
+\begin{theorem}\label{thm:main}
+For every \(n\ge0\), the \(d_n\) zeros of \(O_n\) are simple and negative. For \(g\in\{1,2\}\), let \(d=d_n\), \(e=d_{n+g}\), and order the two root lists increasingly as \(r_1<\cdots<r_d\) and \(s_1<\cdots<s_e\). Their order is
+\[
+\begin{array}{ll}
+ r_1<s_1<r_2<s_2<\cdots<r_d<s_d<0,&e=d,\\[2pt]
+ s_1<r_1<s_2<r_2<\cdots<s_d<r_d<s_{d+1}<0,&e=d+1 .
+\end{array}
+\]
+An empty old root list imposes no intervening comparisons. Thus every three consecutive rows interlace pairwise. A uniform window of four is impossible, since \(O_3\) has degree one and \(O_6\) has degree three.
+\end{theorem}
+
+\section{The principal pole pair}
+
+For \(t<0\) write \(t=-q/(1-q)\) with \(0<q<1\), and put
+\[
+ a=1-2q,\qquad G_q(z)=a-z+q e^z .
+\]
+The denominator in \eqref{eq:egf} is \(G_q(z)/(1-q)\). Hence
+\begin{equation}\label{eq:true}
+ [z^n]G_q(z)^{-1}=\frac{O_n(-q/(1-q))}{(1-q)n!}.
+\end{equation}
+Let \(q_c\) be the unique solution of \(\log q_c+2-2q_c=0\) in \((0,1/2)\).
+Indeed \(f(q)=\log q+2-2q\) increases from \(-\infty\) to \(f(1/2)>0\) and then decreases to \(f(1)=0\). Moreover \(q_c>1/6\) since
+\[
+ \log 6=2\sum_{i\ge0}\frac{(5/7)^{2i+1}}{2i+1}
+ >2\sum_{i=0}^2\frac{(5/7)^{2i+1}}{2i+1}>\frac53.
+\]
+We work first on \(q_c<q<1\). There are no real zeros of \(G_q\), since its minimum on the real line is \(f(q)>0\), attained at \(-\log q\).
+
+A zero \(x+iv\) with \(0<v<\pi\) must satisfy
+\begin{equation}\label{eq:pole}
+ x=a+v\cot v=\log\frac{v}{q\sin v},\qquad
+ K(v):=\log\frac{v}{\sin v}-v\cot v=\log q+a .
+\end{equation}
+Conversely these equations make both parts of \(G_q(x+iv)\) zero. We have \(K(0+)=-1\), \(K(\pi/2)=\log(\pi/2)>0\), and
+\[
+ K'(v)=\frac{(1-v\cot v)^2+v^2}{v}>0 .
+\]
+The right side of \eqref{eq:pole} lies in \((-1,-\log2]\), where the upper bound follows by maximizing \(\log q+1-2q\) at \(q=1/2\). Thus \eqref{eq:pole} determines a unique \(\zeta=x+iv\) in \(0<v<\pi\), with \(0<v<\pi/2\), and it varies continuously with \(q\). Real conjugation gives the corresponding lower pole. The horizontal lines \(\operatorname{Im}z=\pm\pi\) contain no zeros since the imaginary part there has absolute value \(\pi\).
+
+The formula for \(x\) gives \(x>0\) since \(\sin v<v\) and \(q<1\). Also \(v\cot v<1\) since \(\sin v-v\cos v=\int_0^v h\sin h\,dh>0\). Hence \(x<2-2q<5/3\). Put
+\[
+ r=|\zeta|,\qquad \theta=\arg\zeta,\qquad \beta=\arg G_q'(\zeta).
+\]
+We have \(0<\theta<\pi/2\) and \(r<7/3\), using \(v<\pi/2<11/7\) and
+\((5/3)^2+(11/7)^2<(7/3)^2\).
+At the zero,
+\[
+ G_q'(\zeta)=v\cot v-1+iv .
+\]
+Thus it is nonzero and \(\pi/2<\beta<\pi\). Because \(0<v<\pi/2\), the sine is increasing on \([0,v]\), so
+\[
+ 0<1-v\cot v=\frac{\int_0^v h\sin h\,dh}{\sin v}\le \frac{v^2}{2}.
+\]
+It follows that \(|G_q'(\zeta)|<2v\).
+
+We will also need the inequality \(r^2<9x\). On \(0<v<\pi/2\), the alternating sine series and \(v^2<(11/7)^2\) give
+\[
+ \frac{\sin v}{v}
+ \le 1-\frac{v^2}{6}+\frac{v^4}{120}<1-\frac{v^2}{7}.
+\]
+Since \(-\log(1-s)>s\) for \(0<s<1\), \eqref{eq:pole} yields \(x>v^2/7\). Now
+\(r^2=x^2+v^2<(\tfrac53+7)x<9x\).
+
+\section{Uniform contour remainder and phase endpoints}
+
+On the rectangle \(\mathcal R=\{z:|\operatorname{Re}z|\le3,\ |\operatorname{Im}z|\le\pi\}\), its boundary has \(|z|\ge3\) and \(|G_q(z)|\ge1/4\). We verify the latter on every side. On the horizontal sides the imaginary part has absolute value \(\pi\). On the left the real part is at least \(a+3-qe^{-3}>1\). On the right take \(z=3+iy\), \(0\le y\le\pi\), using conjugation for the lower half.
+\begin{itemize}
+ \item For \(y\le2/3\), \(\cos y\ge 1-y^2/2\ge7/9\), and \(e^3>20\) by the series through degree eight. The real part is \(-2+q(e^3\cos y-2)>7/27>1/4\).
+ \item For \(2/3\le y\le\pi/2\), \(\sin y\ge 2y/\pi>(3/5)y\). The imaginary part is \(qe^3\sin y-y>y\).
+ \item For \(\pi/2\le y\le\pi\), the real part is at most \(a-3\le-2\).
+\end{itemize}
+The only zeros inside the rectangle are the simple poles of \(G_q^{-1}\) at \(\zeta,\bar\zeta\), by \eqref{eq:pole} and the absence of real zeros.
+
+Apply the residue theorem to \(z^{-n-1}G_q(z)^{-1}\). Its residue at zero is \([z^n]G_q(z)^{-1}\). Its two other residues are conjugate. Consequently
+\begin{equation}\label{eq:residue}
+ [z^n]G_q(z)^{-1}
+  =-2\,\operatorname{Re}\frac{1}{G_q'(\zeta)\zeta^{n+1}}+R_n,\qquad
+ |R_n|\le \frac{12+4\pi}{2\pi}\frac{4}{3^{n+1}}<\frac{18}{3^{n+1}}.
+\end{equation}
+Here \(R_n\) is the normalized integral on the positively oriented boundary. Define
+\[
+ S_n=\frac{|G_q'(\zeta)|r^{n+1}}{2(1-q)n!}\,O_n\!\left(-\frac{q}{1-q}\right),
+ \qquad \Psi_n=(n+1)\theta+\beta .
+\]
+By \eqref{eq:true} and \eqref{eq:residue},
+\begin{equation}\label{eq:model}
+ S_n=-\cos\Psi_n+E_n,\qquad
+ E_n=\frac{|G_q'(\zeta)|r^{n+1}}2\operatorname{Re}R_n .
+\end{equation}
+This is a positive scaling of the original row. The estimates above and \(v=r\sin\theta\) give
+\begin{align*}
+ |E_i|&<18r(r/3)^{i+1}\sin\theta
+        <42(7/9)^{i+1}\sin\theta,\\
+ |E_i|&<162(7/9)^{i+1}\sin\theta\cos\theta .
+\end{align*}
+In the second inequality we use \(r^2<9x=9r\cos\theta\).
+The integer inequalities \(4\cdot42\cdot7^{21}<9^{21}\) and
+\(4\cdot162\cdot7^{26}<9^{26}\) imply
+\begin{equation}\label{eq:error}
+ |E_i|<\frac{\sin\theta}{4}\quad(i\ge20),\qquad
+ |E_i|<\frac{\sin(2\theta)}8\quad(i\ge25).
+\end{equation}
+In particular the two-step margin remains relative to the phase increment as \(\theta\to\pi/2\).
+
+We now compute the two limits of \(\Psi_n\). At both \(q\downarrow q_c\) and \(q\uparrow1\), \(v\to0\) by \eqref{eq:pole} and strict increase of \(K\). The bound \(1-v\cot v\le v^2/2\) gives \(\beta\to\pi/2\) at both ends. At \(q_c\) we have \(x\to2-2q_c>0\), so \(\theta\to0\). At \(q\uparrow1\), write \(\delta=1-q\). The Taylor expansions of sine, cosine and logarithm at zero give
+\[
+ K(v)+1=\frac{v^2}{2}+O(v^4)
+        =\log(1-\delta)+2\delta=\delta+O(\delta^2).
+\]
+First \(\delta/v^2\to1/2\), and then \(\delta=v^2/2+O(v^4)\).
+Using \(v\cot v=1-v^2/3+O(v^4)\) in \eqref{eq:pole} gives
+\(x=2v^2/3+O(v^4)\). Thus \(x/v\to0\) and \(\theta\to\pi/2\).
+We have proved
+\begin{equation}\label{eq:ends}
+ \Psi_n(q_c+)=\frac{\pi}{2},\qquad
+ \Psi_n(1-)=\frac{(n+2)\pi}{2}.
+\end{equation}
+
+\section{Exact root order for one and two steps}
+
+\begin{lemma}[Continuous phase intervals]\label{lem:phase}
+Let \(F\) be a continuous real function on \([a,b]\). Suppose
+\(L_1<U_1<L_2<U_2<\cdots<L_d<U_d\), \(F(a)<L_1\), and \(U_d<F(b)\).
+There are intervals \([\alpha_k,\gamma_k]\) in \((a,b)\), with
+\(\gamma_k<\alpha_{k+1}\), such that
+\[
+ F(\alpha_k)=L_k,\qquad F(\gamma_k)=U_k,\qquad
+ F([\alpha_k,\gamma_k])\subseteq[L_k,U_k].
+\]
+\end{lemma}
+\begin{proof}
+Start at \(a\) for \(k=1\) and at \(\gamma_{k-1}\) for each later \(k\).
+The phase there is below \(L_k\). Choose the first hit of \(U_k\)
+after that starting point, then the last hit of \(L_k\) before that
+first hit. Continuity and compactness of the level sets guarantee
+that these choices exist. An interior value above \(U_k\) would
+force an earlier hit of \(U_k\), and a value below \(L_k\) would
+force a later hit of \(L_k\) on the way to \(U_k\).
+\end{proof}
+
+For \(n\ge20\), let \(d=d_n\). The continuous phase in \eqref{eq:ends} covers each of the \(d\) closed strips
+\[
+ [L_k,U_k]=[k\pi+\pi/4,\ (k+1)\pi-\pi/4],\qquad 1\le k\le d.
+\]
+In particular \(U_d<(n+2)\pi/2\) even when \(n\) is even. Choose finite parameters \(q_c<a_0<b_0<1\) with \(\Psi_n(a_0)<L_1\) and \(\Psi_n(b_0)>U_d\).
+Lemma~\ref{lem:phase}, using the first- and last-hit construction of Fang
+\cite[Section~6]{fang}, gives disjoint ordered parameter intervals wholly
+contained in their respective phase strips. Only continuity of the phase is used.
+
+At the ends of each interval the main cosine terms in \eqref{eq:model} have opposite signs and absolute value \(1/\sqrt2\). The first bound in \eqref{eq:error} makes them the signs of the actual row. Each open interval therefore contains a zero. The \(d\) intervals exhaust the degree, so all these zeros are real, negative in the \(t\)-coordinate, and simple.
+
+At a zero in strip \(k\), \(\cos\Psi_n=E_n\) and \((-1)^k\sin\Psi_n>1/2\), since the cosine has absolute value less than \(1/4\). Let \(g=1\) and \(n\ge20\), or \(g=2\) and \(n\ge25\).
+Since \(\Psi_{n+g}=\Psi_n+g\theta\),
+\[
+ S_{n+g}
+  = \sin\Psi_n\sin(g\theta)-\cos\Psi_n\cos(g\theta)+E_{n+g}.
+\]
+In both cases \(0<g\theta<\pi\). By \eqref{eq:error},
+the absolute value of the last two terms together is less than
+\(\sin(g\theta)/2\), whereas the first term has greater absolute value.
+Thus \((-1)^k S_{n+g}>0\) at the old zero.
+The relation \(t=-q/(1-q)\) reverses order, so the sign of the new row
+at its \(i\)th old zero from the left is \((-1)^{d-i+1}\).
+With \(O_{n+g}(0)>0\), these signs force one new zero in every
+internal gap and one between the last old zero and 0. When
+\(d_{n+g}=d+1\), the leading sign at negative infinity is
+\((-1)^{d+1}\), which forces one more zero to the left of the first old one.
+These intervals exhaust the new degree and give the claimed strict order.
+
+\section{Finite certificates and formal verification}
+
+The remaining lower indices are \(2\le n<20\) for gap one and \(2\le n<25\) for gap two. Both integer certificates include a short analytic overlap. Start with \eqref{eq:rec}. For an independent reconstruction, let \(A_{m,h}\) be the number of unordered partitions of \([m]\) into \(h\) nonsingleton blocks. Its recurrence is
+\[
+ A_{m,h}=hA_{m-1,h}+(m-1)A_{m-2,h-1},\qquad A_{0,0}=1.
+\]
+The block of the label \(m\) either has size two, allowing \(m-1\) choices of its partner, or has size at least three, allowing deletion of \(m\) followed by insertion into any of \(h\) existing blocks. With impossible indices assigned zero, the second count of the true coefficient is
+\[
+ [t^h]O_n(t)=\sum_{s=0}^n\binom ns A_{n-s,h}(s+h)! .
+\]
+Here \(s\) counts singleton blocks, and \((s+h)!\) orders all blocks.
+The two paths agree coefficient by coefficient through rank 29.
+
+For a row of degree \(m\) and an endpoint \(q=i/D\), use the exact integer
+\((D-i)^m O_n(-i/(D-i))\), interpreted at \(i=D\) by its homogeneous polynomial expression. Each certified open interval has opposite endpoint signs, so it contains a root in \(0<q<1\). The interval interiors are disjoint across the two rows, their row labels alternate starting with the later row in increasing \(q\), and their per-row counts exhaust the respective degree. Reversing the order gives the theorem for those pairs. The constant cases \(n=0,1\) follow from \(O_0=O_1=1,\ O_2=2+t,\ O_3=6+7t\) and the empty-list convention. The obstruction at ranks 3 and 6 follows from their degree difference of two.
+
+The standard-library checks run from the directory containing \texttt{main.tex}.
+\begin{verbatim}
+python3 -B anc/finite.py
+python3 -B anc/two_step.py
+\end{verbatim}
+They verify 230 brackets for gap one at lower indices \(2,\ldots,21\) and
+390 brackets for gap two at lower indices \(2,\ldots,27\).
+
+The Lean definitions count surjections onto ordered block positions.
+All declarations below are in the \path{OrderedPartitions} project.
+\begin{itemize}
+ \item \path{original_threshold_two_window} in \path{TwoPoleAllSizes.lean}
+   gives the full original-row conclusion, including the empty lists.
+ \item \path{threshold_two_window_sharp} checks the obstruction at ranks 3 and 6.
+ \item \path{TwoPoleOriginalTaylor} identifies the Taylor coefficients.
+ \item \path{TwoPoleResidues} and \path{TwoPoleCosineModel} give the
+   residue formula, exact real model, and error bounds.
+ \item \path{TwoPoleFiniteVerified} checks both finite complements.
+\end{itemize}
+The verification from frozen source built 93 local modules with Lean~4.33.1,
+with warnings treated as errors, and replayed each module in a separate
+kernel-checker process. The 92 source axiom reports and 11 additional
+targeted reports use only \texttt{propext}, \texttt{Classical.choice},
+and \texttt{Quot.sound}.
+
+\paragraph{Code and data availability.}
+Exact finite-check inputs accompany the LaTeX source. The formal
+proof and reproducibility materials are intended for the
+\href{https://github.com/AlexZander-666/ordered-partition-large-blocks}{companion repository}
+upon public release.
+
+\paragraph{Disclosure.}
+ChatGPT assisted with the mathematical derivations, implementation and replay of the
+formal proofs, and manuscript preparation.
+
+\begin{thebibliography}{9}
+\bibitem{alex}
+P.~Alexandersson, \emph{Real-rooted open problems}, ordered set partitions with large blocks.
+\href{https://www.symmetricfunctions.com/realRootedOpenProblems.htm\#set-partitions-and-trees}{SymCat}.
+
+\bibitem{bona}
+M.~B\'ona and I.~Mez\H{o}, Real zeros and partitions without singleton blocks,
+\emph{European J. Combin.} \textbf{51} (2016), 500--510.
+\href{https://doi.org/10.1016/j.ejc.2015.07.021}{doi:10.1016/j.ejc.2015.07.021}.
+
+\bibitem{fang}
+C.~Fang, \emph{Eventual interlacing of large-block set-partition polynomials}, 2026.
+\href{https://hexagonmath.org/2611.01129v1}{hexagon:2611.01129v1}.
+
+\bibitem{fubini}
+J.~Jalowy, Z.~Kabluchko, and A.~Marynych,
+\emph{Zeros and exponential profiles of polynomials II: Examples},
+\emph{Constr. Approx.}, 2026.
+\href{https://doi.org/10.1007/s00365-026-09775-2}{doi:10.1007/s00365-026-09775-2}.
+
+\bibitem{lift}
+P.~Alexandersson, \emph{Big blocks in set partitions}, the singleton layer and its ordered lift.
+\href{https://github.com/PerAlexandersson/RealRooted/blob/d34c13585e69912d443ecb973d9b78733dd9a052/RealRooted/CombinatorialExamples/BigBlockSingletons.lean}{Pinned RealRooted development}.
+
+\bibitem{runs}
+P.~Alexandersson and O.~Nabawanda, Peaks are preserved under run-sorting,
+\emph{Enumer. Combin. Appl.} \textbf{2} (2022), no.~1, S2R2.
+\href{https://ecajournal.haifa.ac.il/Volume2022/ECA2022_S2A2.pdf}{Published article}.
+\end{thebibliography}
+\end{document}

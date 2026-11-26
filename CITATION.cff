@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this work when using the formal proofs or the verification scripts."
+type: software
+title: "A sharp three-row interlacing window for ordered partitions by nonsingleton blocks"
+authors:
+  - family-names: Zuo
+    given-names: Bowen
+    affiliation: East China University of Science and Technology
+repository-code: "https://github.com/AlexZander-666/ordered-partition-threshold-two"
+license: Apache-2.0
+keywords:
+  - ordered set partitions
+  - nonsingleton blocks
+  - strict interlacing
+  - Lean 4
